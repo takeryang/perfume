@@ -1,0 +1,43 @@
+body {
+    a {
+        text-decoration: none !important;
+    }
+
+    ul {
+        list-style-type: none !important;
+    }
+
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.btn-outline-white {
+    border-color: #ffffff;
+    color: #ffffff;
+    transition: 0.8s;
+
+    &:hover {
+        color: #ffffff;
+        background-color: #AC8A46;
+        border-color: #AC8A46;
+    }
+}
+
+.btn-outline-black {
+    border-color: #000000;
+    color: #000000;
+    transition: 0.8s;
+
+    &:hover {
+        color: #ffffff;
+        background-color: #AC8A46;
+        border-color: #AC8A46;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:768px) {
+        @content
+    }
+}

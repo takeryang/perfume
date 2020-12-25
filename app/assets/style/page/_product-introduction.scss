@@ -1,0 +1,105 @@
+.introduction {
+    margin-bottom: 60px;
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 48px;
+        margin: 0;
+    }
+
+    .product-description {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 32px;
+    }
+
+    span {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .input-group {
+        margin-top: 12px;
+        margin-bottom: 8px;
+
+        .btn {
+            padding: 14px 55px;
+        }
+    }
+
+    .favorites {
+        display: block;
+        margin-bottom: 80px;
+
+        @include mobile {
+            margin-bottom: 40px;
+        }
+    }
+
+    .modal-content {
+        @include mobile {
+            width: 40%;
+        }
+
+        .modal-body p {
+            font-size: 20px;
+            line-height: 28px;
+            margin: 0;
+        }
+    }
+
+    .buy-description {
+        @include mobile {
+            margin-bottom: 40px;
+        }
+        
+        h4 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+    
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .col-md-8:first-child {
+        margin-bottom: 30px;
+
+        @include mobile {
+            margin-bottom: 28px;
+        }
+    }
+
+    .col-md-8 > .row:first-child {
+        margin-bottom: 30px;
+
+        @include mobile {
+            margin-bottom: 16px;
+        }
+    }
+
+    .col-md-8 .row .introduction-img {
+        @include mobile {
+            height: 660px;
+        }
+    }
+    
+    .mb-mobile {
+        @include mobile {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .description {
+        position: absolute;
+        right: 0;
+    }
+}
